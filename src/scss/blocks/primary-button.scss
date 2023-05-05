@@ -1,0 +1,26 @@
+.primary-button {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: $fontSize;
+    line-height: 1.25em;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
+    width: 134px;
+    height: 46px;
+    padding: 13px 20px;
+    background-color: #000000;
+    border-radius: 6px;
+   
+
+    &:hover,
+    &:focus {
+        background-color: #7e9bbd;
+    }
+    &:active {
+        background-color: #49525B;
+    }
+}
