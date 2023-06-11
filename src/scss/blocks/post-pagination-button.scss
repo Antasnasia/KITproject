@@ -1,0 +1,50 @@
+.post-pagination-button-container {
+    cursor: pointer;
+    width: 422px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+    
+    .post-pagination-button-button {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 400;
+        font-size: $fontSize;
+        line-height: 1.3em;
+
+        color: #7E9BBD;
+        
+        
+        display: flex;
+        align-self: center;
+        align-content: center;
+        gap: 10px;
+        width: 100%;
+        border: 1px solid rgba(126, 155, 189, 0.3);
+
+        
+
+        
+        &:hover,
+        &:focus {
+             background-color: #EFF6FB;
+             color: #4374AD;
+        }
+         &:active {
+            background-color:  #9BC3DC;
+            color: #ffffff;
+        }
+        .pagination-button-link {
+            text-decoration: none;
+        }
+    }
+        .button-left {
+            border-radius:  8px 0px 0px 8px;
+        }
+        .button-right {
+            border-radius:  0px 8px 8px 0px;
+        }
+
+    }
