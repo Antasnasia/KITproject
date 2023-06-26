@@ -6,10 +6,12 @@ block variables
     - var pageClass= "index-page";
 
 block content
-    header.header
-        h1.mb-25 #{jsonData.siteName}
+    include ./../sections/header.pug
+       
 
-    include ./../sections/section.pug
+    include ./../sections/section_about.pug
+    include ./../sections/section_newprojects.pug
+
 
     footer.footer
         h1 Footer

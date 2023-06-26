@@ -1,0 +1,42 @@
+.about_content_wrapper {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+}
+.about_img {
+    width: 100%;
+    border-radius: 4px;
+    box-shadow: 0px 10px 40px 0px rgba(126, 155, 189, 0.30);
+}
+.about_text_wrapper {
+    margin-left: 50px;
+    margin-top: 32px;
+} 
+.about_title {
+    color: #000;
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    line-height: 120%;
+    letter-spacing: 2.6px;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+}
+.about_text {
+    color: #000;
+    font-size: 18px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    line-height: 170%;
+    margin-bottom: 35px;
+} 
+.tech_list {
+    list-style-type: disc;
+}
+.tech_item {
+    color: #000;
+    font-size: 20px;
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    line-height: 150%;
+}
