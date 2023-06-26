@@ -1,0 +1,33 @@
+extends ./layout/ui-layout.pug
+include ./mixins/*.pug
+include ./../mixins/*.pug
+
+block variables
+    - var title = 'Блоки - UI-kit и HTML фреймворк - Документация';
+    - var pageClass = 'body--dashboard';
+
+block content
+
+    //- Заголовок компонента
+    h1.ui-kit__component-title.
+        Аватарка большая
+
+    //- Демонстрация компонента
+    .ui-kit__component-demo
+        +avatar-big('avatar John.png')
+
+    //- Код для вызова компонента
+    .ui-kit__component-code
+        pre.
+            +avatar-big('file name')
+
+    //- Файл в котором описан компонент
+    .ui-kit__element-title.
+        Название файла:
+        mixins/avatar-big.pug
+
+    //- Распечатка кода компонента
+    .ui-kit__element-code
+        pre.
+            mixin avatar-big(link) 
+                img.avatar-big(src="./../img/avatars/" + link, alt="avatar photo", width="160" height="160")

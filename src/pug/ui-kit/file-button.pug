@@ -1,0 +1,35 @@
+extends ./layout/ui-layout.pug
+include ./mixins/*.pug
+include ./../mixins/*.pug
+
+block variables
+    - var title = 'Кнопки - UI-kit и HTML фреймворк - Документация';
+    - var pageClass = 'body--dashboard';
+
+block content
+
+    //- Заголовок компонента
+    h1.ui-kit__component-title.
+        Кнопка загрузки файла 
+
+    //- Демонстрация компонента
+    .ui-kit__component-demo
+        +file-button
+
+    //- Код для вызова компонента
+    .ui-kit__component-code
+        pre.
+            +file-button
+
+    //- Файл в котором описан компонент
+    .ui-kit__element-title.
+        Название файла:
+        mixins/file-button.pug
+
+    //- Распечатка кода компонента
+    .ui-kit__element-code
+        pre.
+           mixin file-button (text="Выбрать файл") 
+                div.file-button-container
+                    button.file-button-button #{text}
+                    input(type="file")
