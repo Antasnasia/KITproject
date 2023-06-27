@@ -1,11 +1,41 @@
 .header {
-    width: 600px;
-    padding: 50px 25px;
-    margin: 0 auto;
-    background-color: rgb(65, 230, 128);
+    
+    padding: 50px 0 40px 0;
     text-align: center;
+    .site_title {
+        font-family: 'Playfair Display', serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 38px;
+        line-height: 130%;
+        text-transform: uppercase;
+        margin-bottom: 40px;
+    }
+    
+    
+    .main_nav {
+        font-family: 'Montserrat', sans-serif;
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 130%;
+        text-transform: uppercase;
+        
+    }
+    .nav_list {
+        display: flex;
+        justify-content: center;
+        list-style: none;
+    }
+    .nav_list_item {
+        margin-right: 60px;
 
-    @media (min-width: 992px) {
-        width: 400px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    .nav_list_item a {
+        text-decoration: none;
+        color: #000;
     }
 }
