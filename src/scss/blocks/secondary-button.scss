@@ -1,0 +1,28 @@
+.secondary-button {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    text-decoration: none;
+    font-size: $fontSize;
+    line-height: 1.25em;
+    color: #000000;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
+    cursor: pointer;
+    width: 104px;
+    height: 46px;
+    padding: 13px 20px;
+    background-color: rgba(126, 155, 189, 0.3);
+    border-radius: 6px;
+   
+
+    &:hover,
+    &:focus {
+        background-color:rgba(71, 137, 215, 0.3);
+    }
+    &:active {
+        background-color: rgba(45, 77, 115, 0.3);
+    }
+}
